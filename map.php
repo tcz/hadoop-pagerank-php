@@ -10,4 +10,6 @@ while ( true )
     {
        break;
     }
+
+    list( $url, $page_rank, $links )    = preg_split( "/\s+/", $line, 3, PREG_SPLIT_NO_EMPTY );
 }
