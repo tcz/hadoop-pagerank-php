@@ -20,4 +20,8 @@ while ( true )
         echo "N" . $page_rank / count( $links );
         echo "\n";
     }
+
+    echo "$url\t";
+    echo implode( " ", $links );
+    echo "\n";
 }
