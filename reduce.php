@@ -18,4 +18,11 @@ while ( true )
     }
 
     $last_key = $key;
+
+    switch( substr( $value, 0, 1 ) )
+    {
+        case 'N':
+            $new_page_rank += (float) substr( $value, 1 );
+            break;
+    }
 }
