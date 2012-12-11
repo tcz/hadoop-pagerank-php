@@ -24,5 +24,7 @@ while ( true )
         case 'N':
             $new_page_rank += (float) substr( $value, 1 );
             break;
+        default:
+            $links = preg_split( "/\s+/", $value, -1, PREG_SPLIT_NO_EMPTY );
     }
 }
