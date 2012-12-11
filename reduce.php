@@ -1,6 +1,10 @@
 #!/usr/bin/php
 <?php
 
+$last_key = null;
+$links = array();
+$new_page_rank = 0;
+
 while ( true )
 {
     $line = fgets( STDIN );
@@ -12,4 +16,6 @@ while ( true )
     {
         break;
     }
+
+    $last_key = $key;
 }
