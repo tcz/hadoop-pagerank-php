@@ -12,6 +12,14 @@ while ( true )
 
     list( $key, $value ) = preg_split( "/\t/", $line, 2, PREG_SPLIT_NO_EMPTY );
 
+    if ( $key !== $last_key && isset( $last_key ) )
+    {
+        echo "$last_key ";
+        echo "$new_page_rank ";
+        echo implode( " ", $links );
+        echo "\n";
+    }
+
     if ( empty( $line ) )
     {
         break;
