@@ -9,3 +9,9 @@ if ( $argc !== 3 )
 require_once __DIR__ . '/lib/deleteFile.php';
 require_once __DIR__ . '/lib/runJob.php';
 require_once __DIR__ . '/lib/readCounter.php';
+
+$input          = $argv[1];
+$output_prefix  = $argv[2];
+$mapper         = __DIR__ . '/map.php';
+$reducer        = __DIR__ . '/reduce.php';
+$iteration      = 0;
