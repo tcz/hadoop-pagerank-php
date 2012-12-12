@@ -18,6 +18,10 @@ while ( true )
         echo "$new_page_rank ";
         echo implode( " ", $links );
         echo "\n";
+
+        $links = array();
+        $new_page_rank = 0;
+        $old_page_rank = 0;
     }
 
     if ( empty( $line ) )
