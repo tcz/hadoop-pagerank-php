@@ -29,6 +29,12 @@ while ( true )
         echo implode( " ", $links );
         echo "\n";
 
+        fwrite( STDERR, "reporter:counter:PhpPageRankTest,DOCUMENTS,1\n" );
+        fwrite( STDERR, "reporter:counter:PhpPageRankTest,DELTA," .
+            round( abs( $old_page_rank - $new_page_rank ) * 1000 ) .
+            "\n"
+        );
+
         $links = array();
         $new_page_rank = 0;
         $old_page_rank = 0;
