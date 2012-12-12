@@ -29,6 +29,10 @@ while ( true )
     }
 
     echo "$url\t";
+    echo "O" . $page_rank;
+    echo "\n";
+
+    echo "$url\t";
     echo implode( " ", $links );
     echo "\n";
 }

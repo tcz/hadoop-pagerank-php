@@ -11,6 +11,7 @@
 $last_key = null;
 $links = array();
 $new_page_rank = 0;
+$old_page_rank = 0;
 
 while ( true )
 {
@@ -44,6 +45,9 @@ while ( true )
     {
         case 'N':
             $new_page_rank += (float) substr( $value, 1 );
+            break;
+        case 'O':
+            $old_page_rank = (float) substr( $value, 1 );
             break;
         default:
             $links = preg_split( "/\s+/", $value, -1, PREG_SPLIT_NO_EMPTY );
