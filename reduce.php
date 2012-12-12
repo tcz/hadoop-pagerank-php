@@ -14,6 +14,8 @@ while ( true )
 
     if ( $key !== $last_key && isset( $last_key ) )
     {
+        $new_page_rank = 0.15 + 0.85 * $new_page_rank;
+
         echo "$last_key ";
         echo "$new_page_rank ";
         echo implode( " ", $links );
