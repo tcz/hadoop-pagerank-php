@@ -16,6 +16,8 @@ $mapper         = __DIR__ . '/map.php';
 $reducer        = __DIR__ . '/reduce.php';
 $iteration      = 0;
 
+deleteFile( $output_prefix . '*' );
+
 do
 {
     $output = $output_prefix . $iteration;
